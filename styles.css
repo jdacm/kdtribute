@@ -10,14 +10,15 @@ body {
     color: #333;
     background-color: #f4f4f4;
     background-image: url(hero2.png);
-    background-position: left;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
     background: #35424a;
     color: #ffffff;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
 }
 
@@ -30,15 +31,10 @@ h1 {
     padding: 20px;
 }
 
-.hero-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
 .hero-description {
     margin-top: 15px;
     font-size: 1.2em;
+    font-style: italic;
 }
 
 main {
@@ -48,8 +44,7 @@ main {
 }
 
 section {
-    margin: 20px 0;
-    margin-left: 90px;
+    margin: 20px 10px;
 }
 
 h2 {
@@ -59,22 +54,67 @@ h2 {
 
 ul {
     list-style-type: square;
-    margin-left: 20px;
+    padding-left: 20px;
 }
 
 blockquote {
     margin: 10px 0;
-    padding: 10px;
+    padding: 15px;
     background: #e7e7e7;
     border-left: 5px solid #35424a;
+    font-style: italic;
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
     background: #35424a;
     color: #ffffff;
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .hero-description {
+        font-size: 1.1em;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-description {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    section {
+        margin: 15px 0;
+    }
+
+    ul {
+        padding-left: 10px;
+    }
 }
